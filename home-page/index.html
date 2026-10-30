@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitMorph AI | O Aplicativo Definitivo de Treino Inteligente & Biometria</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="FitMorph AI: Aplicativo inteligente de treino e musculação alimentado por inteligência artificial. Prescrição adaptativa, rastreador de séries, calculadora de anilhas, TDEE e biometria completa.">
+  <meta name="keywords" content="fitmorph, treino musculação, inteligência artificial treino, calculadora anilhas, tdee calculadora, ficha de treino ia, biometria academia">
+  <meta name="author" content="FitMorph AI Team">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="FitMorph AI | Treino Inteligente com Inteligência Artificial">
+  <meta property="og:description" content="Evolua seu físico com periodização inteligente, calculadora de anilhas e nutrição de precisão.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero_mockup.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/app_icon.jpg">
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Background Blobs -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+  <div class="ambient-glow glow-center"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo">
+        <img src="assets/app_icon.jpg" alt="FitMorph AI Logo" class="brand-icon">
+        <span class="brand-name">FitMorph <span class="neon-badge">AI</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#funcionalidades" class="nav-link">Funcionalidades</a></li>
+          <li><a href="#simulador" class="nav-link">Simuladores Vivos</a></li>
+          <li><a href="#biometria" class="nav-link">Biometria</a></li>
+          <li><a href="#comparativo" class="nav-link">Diferenciais</a></li>
+          <li><a href="#depoimentos" class="nav-link">Atletas</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#download" class="btn btn-neon-outline">
+          <span>Baixar App</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Alimentado por Google Gemini AI & Ciência do Treinamento</span>
+          </div>
+
+          <h1 class="hero-title">
+            Redefina seu corpo com a <span class="text-gradient">Inteligência Artificial</span> mais avançada do fitness
+          </h1>
+
+          <p class="hero-subtitle">
+            O <strong>FitMorph AI</strong> prescreve e adapta seus treinos dinamicamente, calcula suas anilhas na barra, sugere substitutos biomecânicos para aparelhos ocupados e monitora sua evolução e nutrição com precisão cirúrgica.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-neon-solid" id="hero-cta-btn">
+              <span>Experimentar FitMorph Grátis</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#simulador" class="btn btn-glass">
+              <span>Testar Ferramentas Interativas</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats Pill Bar -->
+          <div class="hero-stats-row">
+            <div class="stat-pill">
+              <span class="stat-number" data-target="100">100+</span>
+              <span class="stat-label">Exercícios Anatômicos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-number">Gemini AI</span>
+              <span class="stat-label">Prescrição Adaptativa</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-pill">
+              <span class="stat-number">0s</span>
+              <span class="stat-label">Delay com Supabase Sync</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="mockup-wrapper">
+            <div class="glow-aura"></div>
+            <img src="assets/hero_mockup.jpg" alt="FitMorph AI Aplicativo em Ação" class="mockup-img" id="hero-mockup-img">
+            
+            <!-- Floating interactive micro-cards -->
+            <div class="floating-chip chip-pr floating-anim-1">
+              <div class="chip-icon">🏆</div>
+              <div class="chip-text">
+                <span class="chip-title">Novo Recorde (PR)</span>
+                <span class="chip-desc">Agachamento Livre 110kg • 5 reps</span>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-rest floating-anim-2">
+              <div class="chip-icon">⏱️</div>
+              <div class="chip-text">
+                <span class="chip-title">Descanso Inteligente</span>
+                <span class="chip-desc">00:45 • Recuperação de ATP</span>
+              </div>
+            </div>
+
+            <div class="floating-chip chip-macro floating-anim-3">
+              <div class="chip-icon">⚡</div>
+              <div class="chip-text">
+                <span class="chip-title">Meta de Proteína</span>
+                <span class="chip-desc">165g / 180g (92% atingido)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE INTERACTIVE SIMULATOR SUITE -->
+    <section class="simulator-section" id="simulador">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-pill">EXPERIÊNCIA AO VIVO</span>
+          <h2 class="section-title">Experimente os Recursos do App no Navegador</h2>
+          <p class="section-desc">
+            Interaja com as mesmas lógicas matemáticas e algoritmos de inteligência artificial construídos no FitMorph AI.
+          </p>
+        </div>
+
+        <!-- Simulator Tabs -->
+        <div class="simulator-tabs" role="tablist">
+          <button class="tab-btn active" data-tab="tab-plate" id="tab-btn-plate">
+            <span class="tab-icon">🏋️</span>
+            <span>Calculadora de Anilhas</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-tdee" id="tab-btn-tdee">
+            <span class="tab-icon">🥗</span>
+            <span>Calculadora TDEE & Macros</span>
+          </button>
+          <button class="tab-btn" data-tab="tab-workout" id="tab-btn-workout">
+            <span class="tab-icon">🤖</span>
+            <span>Gerador de Treino IA</span>
+          </button>
+        </div>
+
+        <!-- Simulator Tab Contents -->
+        <div class="simulator-panels">
+
+          <!-- TAB 1: PLATE CALCULATOR -->
+          <div class="simulator-panel active" id="tab-plate">
+            <div class="panel-grid">
+              
+              <div class="panel-controls">
+                <h3 class="panel-heading">Distribuição Instantânea de Anilhas na Barra</h3>
+                <p class="panel-subtext">Nunca mais perca tempo calculando mentalmente quanto colocar em cada lado da barra.</p>
+                
+                <div class="control-group">
+                  <label class="control-label">Peso da Barra:</label>
+                  <div class="bar-selector">
+                    <button class="bar-btn active" data-bar="20">Olímpica (20 kg)</button>
+                    <button class="bar-btn" data-bar="15">Feminina (15 kg)</button>
+                    <button class="bar-btn" data-bar="10">Reta / W (10 kg)</button>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <div class="label-with-value">
+                    <label for="plate-target-input" class="control-label">Peso Total Alvo:</label>
+                    <span class="highlight-val" id="plate-target-display">80 kg</span>
+                  </div>
+                  <input type="range" id="plate-slider" min="20" max="260" step="2.5" value="80" class="neon-slider">
+                  <div class="quick-adjust-row">
+                    <button class="adjust-chip" data-delta="-10">-10 kg</button>
+                    <button class="adjust-chip" data-delta="-2.5">-2.5 kg</button>
+                    <button class="adjust-chip" data-delta="2.5">+2.5 kg</button>
+                    <button class="adjust-chip" data-delta="10">+10 kg</button>
+                  </div>
+                </div>
+
+                <div class="plate-legend">
+                  <span class="legend-title">Cores Padrão Olímpico:</span>
+                  <div class="legend-items">
+                    <span class="plate-badge plate-25">25kg</span>
+                    <span class="plate-badge plate-20">20kg</span>
+                    <span class="plate-badge plate-15">15kg</span>
+                    <span class="plate-badge plate-10">10kg</span>
+                    <span class="plate-badge plate-5">5kg</span>
+                    <span class="plate-badge plate-25s">2.5kg</span>
+                    <span class="plate-badge plate-125s">1.25kg</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel-preview">
+                <div class="barbell-visualizer-card">
+                  <div class="barbell-header">
+                    <div>
+                      <span class="sub-label">Carga por Lado</span>
+                      <h4 class="calc-big-value" id="weight-per-side">30.0 <small>kg/lado</small></h4>
+                    </div>
+                    <div>
+                      <span class="sub-label">Total Carregado</span>
+                      <h4 class="calc-big-value text-neon" id="total-barbell-weight">80.0 <small>kg</small></h4>
+                    </div>
+                  </div>
+
+                  <!-- Graphic Barbell representation -->
+                  <div class="barbell-graphic">
+                    <div class="bar-sleeve bar-sleeve-left">
+                      <div class="plates-stack left-stack" id="plates-stack-left"></div>
+                      <div class="bar-collar"></div>
+                    </div>
+                    <div class="bar-shaft">
+                      <span class="shaft-text">FitMorph Olympic Bar</span>
+                    </div>
+                    <div class="bar-sleeve bar-sleeve-right">
+                      <div class="bar-collar"></div>
+                      <div class="plates-stack right-stack" id="plates-stack-right"></div>
+                    </div>
+                  </div>
+
+                  <!-- Plate Breakdown Table -->
+                  <div class="plates-breakdown-list" id="plates-breakdown-list">
+                    <!-- Populated by JS -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 2: TDEE & MACROS CALCULATOR -->
+          <div class="simulator-panel" id="tab-tdee">
+            <div class="panel-grid">
+              
+              <div class="panel-controls">
+                <h3 class="panel-heading">Cálculo Metabólico Mifflin-St Jeor & Katch-McArdle</h3>
+                <p class="panel-subtext">Planejamento calórico e nutricional com base no seu perfil biológico exato.</p>
+                
+                <div class="inputs-grid-2">
+                  <div class="control-group">
+                    <label class="control-label" for="tdee-weight">Peso (kg):</label>
+                    <input type="number" id="tdee-weight" value="78" min="40" max="200" class="input-field">
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="tdee-height">Altura (cm):</label>
+                    <input type="number" id="tdee-height" value="178" min="120" max="230" class="input-field">
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label" for="tdee-age">Idade:</label>
+                    <input type="number" id="tdee-age" value="26" min="14" max="90" class="input-field">
+                  </div>
+                  <div class="control-group">
+                    <label class="control-label">Sexo Biológico:</label>
+                    <div class="segmented-control">
+                      <button class="seg-btn active" data-gender="male" id="gender-male">Masc</button>
+                      <button class="seg-btn" data-gender="female" id="gender-female">Fem</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="tdee-activity">Nível de Atividade:</label>
+                  <select id="tdee-activity" class="input-field select-field">
+                    <option value="1.2">Sedentário (pouco ou nenhum exercício)</option>
+                    <option value="1.375">Levemente Ativo (1 a 3 dias/semana)</option>
+                    <option value="1.55" selected>Moderadamente Ativo (3 a 5 dias/semana)</option>
+                    <option value="1.725">Muito Ativo (6 a 7 dias/semana)</option>
+                    <option value="1.9">Extremamente Ativo (trabalho físico + treinos)</option>
+                  </select>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">Objetivo Físico:</label>
+                  <div class="goal-pill-grid">
+                    <button class="goal-btn active" data-goal="hypertrophy">Hipertrofia (+300 kcal)</button>
+                    <button class="goal-btn" data-goal="fatLoss">Secar Gordura (-450 kcal)</button>
+                    <button class="goal-btn" data-goal="recomposition">Recomposição (-100 kcal)</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel-preview">
+                <div class="tdee-results-card">
+                  
+                  <div class="tdee-kpi-row">
+                    <div class="kpi-box">
+                      <span class="kpi-label">Taxa Metabólica Basal (TMB)</span>
+                      <span class="kpi-value" id="bmr-display">1.765 <small>kcal</small></span>
+                    </div>
+                    <div class="kpi-box">
+                      <span class="kpi-label">Gasto Total Diário (TDEE)</span>
+                      <span class="kpi-value" id="tdee-display">2.735 <small>kcal</small></span>
+                    </div>
+                  </div>
+
+                  <div class="target-calories-banner">
+                    <div class="banner-info">
+                      <span class="banner-tag">META CALÓRICA DIÁRIA</span>
+                      <h4 class="target-cal-num" id="target-cal-display">3.035 <small>kcal/dia</small></h4>
+                    </div>
+                    <div class="water-box">
+                      <span class="water-icon">💧</span>
+                      <div>
+                        <span class="water-label">Água Diária</span>
+                        <strong class="water-val" id="water-display">2.960 ml</strong>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h5 class="macros-header">Distribuição de Macronutrientes Científicos</h5>
+
+                  <!-- Macro Bars -->
+                  <div class="macro-breakdown-bars">
+                    <div class="macro-row">
+                      <div class="macro-meta">
+                        <span class="macro-dot dot-protein"></span>
+                        <span class="macro-name">Proteína (2.0g/kg)</span>
+                        <span class="macro-grams" id="protein-grams">156 g</span>
+                      </div>
+                      <div class="macro-progress-bar">
+                        <div class="progress-fill fill-protein" id="protein-bar" style="width: 25%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="macro-row">
+                      <div class="macro-meta">
+                        <span class="macro-dot dot-carbs"></span>
+                        <span class="macro-name">Carboidratos</span>
+                        <span class="macro-grams" id="carbs-grams">410 g</span>
+                      </div>
+                      <div class="macro-progress-bar">
+                        <div class="progress-fill fill-carbs" id="carbs-bar" style="width: 55%;"></div>
+                      </div>
+                    </div>
+
+                    <div class="macro-row">
+                      <div class="macro-meta">
+                        <span class="macro-dot dot-fats"></span>
+                        <span class="macro-name">Gorduras Boas</span>
+                        <span class="macro-grams" id="fats-grams">84 g</span>
+                      </div>
+                      <div class="macro-progress-bar">
+                        <div class="progress-fill fill-fats" id="fats-bar" style="width: 20%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- TAB 3: WORKOUT GENERATOR DEMO -->
+          <div class="simulator-panel" id="tab-workout">
+            <div class="panel-grid">
+              
+              <div class="panel-controls">
+                <h3 class="panel-heading">Prescrição Neural de Treino Gemini AI</h3>
+                <p class="panel-subtext">Veja como a IA monta sessões com volume equilibrado, RPE calibrado e tempo de descanso otimizado.</p>
+
+                <div class="control-group">
+                  <label class="control-label">Foco Muscular da Sessão:</label>
+                  <select id="workout-focus" class="input-field select-field">
+                    <option value="agonist_antagonist" selected>⚔️ Peito & Costas (Agonista / Antagonista)</option>
+                    <option value="arms_shoulders">💪 Braços & Ombros (Bíceps + Tríceps + Deltóides)</option>
+                    <option value="chest_triceps">⚡ Peito, Ombros & Tríceps (Push Day)</option>
+                    <option value="back_biceps">🏹 Costas, Trapézio & Bíceps (Pull Day)</option>
+                    <option value="legs_core">🦵 Pernas Completo & Panturrilhas (Leg Day)</option>
+                    <option value="upper_focus">🏛️ Superior Completo (Upper Body Multi-Músculo)</option>
+                  </select>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">Nível de Experiência:</label>
+                  <div class="segmented-control">
+                    <button class="seg-btn" data-level="iniciante">Iniciante</button>
+                    <button class="seg-btn active" data-level="intermediario">Intermediário</button>
+                    <button class="seg-btn" data-level="avancado">Avançado</button>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label">Tempo Disponível:</label>
+                  <div class="segmented-control">
+                    <button class="seg-btn" data-time="45">45 min</button>
+                    <button class="seg-btn active" data-time="60">60 min</button>
+                    <button class="seg-btn" data-time="75">75 min</button>
+                  </div>
+                </div>
+
+                <button class="btn btn-neon-solid btn-block" id="btn-generate-demo">
+                  <span class="sparkle-icon">✨</span>
+                  <span>Gerar Ficha com FitMorph AI</span>
+                </button>
+              </div>
+
+              <div class="panel-preview">
+                <div class="workout-sheet-card">
+                  
+                  <div class="workout-sheet-header">
+                    <div>
+                      <span class="sheet-badge" id="sheet-split-badge">PUSH A • HIPERTROFIA</span>
+                      <h4 class="sheet-title" id="sheet-title">Peito, Ombros Frontais & Tríceps</h4>
+                    </div>
+                    <div class="sheet-metrics">
+                      <span class="sheet-metric-chip">⏱️ 60 min</span>
+                      <span class="sheet-metric-chip">⚡ 18 Séries</span>
+                    </div>
+                  </div>
+
+                  <!-- Exercise list populated dynamically -->
+                  <div class="workout-exercise-list" id="demo-exercise-list">
+                    <!-- Populated by JS -->
+                  </div>
+
+                  <div class="ai-coach-tip">
+                    <span class="tip-icon">💡</span>
+                    <p class="tip-text" id="demo-coach-tip">
+                      <strong>Dica do FitMorph AI:</strong> Mantenha RPE 8 nas primeiras 3 séries do Supino Reto e busque falha concêntrica técnica apenas na última série.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE 6 ENGINES OF FITMORPH -->
+    <section class="features-section" id="funcionalidades">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-pill">ARQUITETURA COMPLETA</span>
+          <h2 class="section-title">Construído para Atletas, Evoluído por IA</h2>
+          <p class="section-desc">
+            Cada módulo do aplicativo foi desenhado para eliminar a adivinhação e acelerar ganhos de hipertrofia e definição muscular.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="card-icon-box neon-green-glow">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="feature-title">Anamnese & Biótipo Completo</h3>
+            <p class="feature-text">
+              Avaliação de histórico de lesões, restrições articulares, frequência semanal disponível e preferências antes de prescrever qualquer repetição.
+            </p>
+            <ul class="feature-highlights">
+              <li>Mapeamento de desvios e dores</li>
+              <li>Calibração de volume semanal ideal</li>
+              <li>Adaptação a dias flexíveis (3 a 6x)</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="card-icon-box neon-cyan-glow">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            </div>
+            <h3 class="feature-title">Modo Treino Ativo & Cargas</h3>
+            <p class="feature-text">
+              Interface dark mode de alto contraste pensada para o uso dinâmico na academia. Registro de peso e repetições com cronômetro sonoro e cálculo de 1RM em tempo real.
+            </p>
+            <ul class="feature-highlights">
+              <li>Histórico da última carga executada</li>
+              <li>Calculadora 1RM (Uma Repetição Máxima)</li>
+              <li>Timer de descanso com alerta sonoro</li>
+            </ul>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="card-icon-box neon-orange-glow">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </div>
+            <h3 class="feature-title">Substituição Inteligente de Exercícios</h3>
+            <p class="feature-text">
+              Aparelho ou banco ocupado? Em 1 clique o FitMorph sugere opções biomecanicamente idênticas que ativam as mesmas fibras musculares.
+            </p>
+            <ul class="feature-highlights">
+              <li>Substitutos por halteres, polia ou barra</li>
+              <li>Mesma curva de tensão e segurança</li>
+              <li>Nunca perca o ritmo da sua sessão</li>
+            </ul>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="feature-card">
+            <div class="card-icon-box neon-purple-glow">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="feature-title">Calculadora de Anilhas Integrada</h3>
+            <p class="feature-text">
+              Esqueça contas de cabeça para carregar o supino, agachamento ou levantamento terra. O app desenha exatamente quais anilhas colocar em cada lado da barra.
+            </p>
+            <ul class="feature-highlights">
+              <li>Suporte a barras de 20kg, 15kg e 10kg</li>
+              <li>Anilhas de 25kg a 1.25kg codificadas</li>
+              <li>Cálculo instantâneo sem interromper o set</li>
+            </ul>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="feature-card">
+            <div class="card-icon-box neon-green-glow">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+            </div>
+            <h3 class="feature-title">Biometria & Evolução Fotográfica</h3>
+            <p class="feature-text">
+              Monitore peso na balança, circunferências corporais, percentual de gordura estimado e compare fotos de evolução lado a lado com gráficos dinâmicos.
+            </p>
+            <ul class="feature-highlights">
+              <li>Gráficos interativos de tendência de peso</li>
+              <li>Galeria privada de progresso fotográfico</li>
+              <li>Métricas de densidade muscular e BF%</li>
+            </ul>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="feature-card">
+            <div class="card-icon-box neon-cyan-glow">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <h3 class="feature-title">Nutrição, TDEE & Hidratação</h3>
+            <p class="feature-text">
+              Calcule seu Gasto Calórico Total Diário (TDEE) com métodos científicos e receba a distribuição exata de proteínas, carboidratos, gorduras e litros de água.
+            </p>
+            <ul class="feature-highlights">
+              <li>Meta ajustada para superávit ou déficit</li>
+              <li>Rastreador diário de copos d'água</li>
+              <li>Aporte de proteína científica (2.0 a 2.3g/kg)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DEEP DIVE SHOWCASE: BIOMETRICS & ANALYTICS -->
+    <section class="deepdive-section" id="biometria">
+      <div class="container deepdive-container">
+        
+        <div class="deepdive-image-col">
+          <div class="deepdive-frame">
+            <img src="assets/biometrics_showcase.jpg" alt="FitMorph Telemetria e Biometria Holográfica" class="deepdive-img">
+            <div class="frame-tag">
+              <span>● TELEMETRIA ATIVA FITMORPH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="deepdive-content-col">
+          <span class="section-pill">CIÊNCIA DE DADOS APLICADA AO CORPO</span>
+          <h2 class="section-title">Decisões Baseadas em Dados, Não em Suposições</h2>
+          <p class="section-desc">
+            A maioria das pessoas falha na academia por não enxergar se estão estagnadas ou em sobrecarga progressiva. O FitMorph compila cada repetição feita para calcular seu volume total semanal por grupo muscular (chest, back, quads, hamstrings, deltoids).
+          </p>
+
+          <div class="deepdive-features-list">
+            <div class="dd-item">
+              <div class="dd-bullet">01</div>
+              <div>
+                <h4 class="dd-title">Sobrecarga Progressiva Monitorada</h4>
+                <p class="dd-desc">O app alerta quando você já consolidou o volume em um exercício e está pronto para subir a carga ou aumentar as repetições.</p>
+              </div>
+            </div>
+
+            <div class="dd-item">
+              <div class="dd-bullet">02</div>
+              <div>
+                <h4 class="dd-title">Hall da Fama de Recordes Pessoais (PRs)</h4>
+                <p class="dd-desc">Registro histórico dos seus maiores levantamentos em supino, agachamento e terra, com badges comemorativos a cada nova conquista.</p>
+              </div>
+            </div>
+
+            <div class="dd-item">
+              <div class="dd-bullet">03</div>
+              <div>
+                <h4 class="dd-title">Sincronização Nuvem Ultrarrápida</h4>
+                <p class="dd-desc">Seus dados ficam 100% seguros com infraestrutura Supabase PostgreSQL, disponíveis em qualquer dispositivo em milissegundos.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#download" class="btn btn-neon-solid">
+            <span>Começar Minha Transformação</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE SECTION -->
+    <section class="comparison-section" id="comparativo">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-pill">POR QUE ESCOLHER O FITMORPH</span>
+          <h2 class="section-title">Como o FitMorph AI se Compara</h2>
+          <p class="section-desc">
+            Veja a diferença entre treinar no improviso e contar com um ecossistema inteligente de alta performance.
+          </p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Recursos & Tecnologias</th>
+                <th>Ficha de Papel / Memória</th>
+                <th>Apps Genéricos de Treino</th>
+                <th class="col-highlight">FitMorph AI ⚡</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Prescrição com IA Generativa</td>
+                <td><span class="cross-mark">✕</span></td>
+                <td><span class="cross-mark">✕</span></td>
+                <td class="col-highlight"><span class="check-mark">✓ Google Gemini</span></td>
+              </tr>
+              <tr>
+                <td>Calculadora de Anilhas Integrada</td>
+                <td><span class="cross-mark">✕</span></td>
+                <td><span class="cross-mark">✕</span></td>
+                <td class="col-highlight"><span class="check-mark">✓ Barra Olímpica & Convencional</span></td>
+              </tr>
+              <tr>
+                <td>Substituição de Aparelho Ocupado</td>
+                <td><span class="cross-mark">✕</span></td>
+                <td><span class="cross-mark">✕</span></td>
+                <td class="col-highlight"><span class="check-mark">✓ Alternativas Biomecânicas</span></td>
+              </tr>
+              <tr>
+                <td>Cálculo TDEE & Metas de Macros</td>
+                <td><span class="cross-mark">✕</span></td>
+                <td><span class="maybe-mark">Apenas calorias</span></td>
+                <td class="col-highlight"><span class="check-mark">✓ Mifflin-St Jeor & Katch</span></td>
+              </tr>
+              <tr>
+                <td>Rastreamento de 1RM & Cargas</td>
+                <td><span class="cross-mark">✕</span></td>
+                <td><span class="maybe-mark">Básico</span></td>
+                <td class="col-highlight"><span class="check-mark">✓ Cálculo em Tempo Real</span></td>
+              </tr>
+              <tr>
+                <td>Interface Dark Neon Otimizada</td>
+                <td><span class="cross-mark">✕</span></td>
+                <td><span class="cross-mark">✕</span></td>
+                <td class="col-highlight"><span class="check-mark">✓ Visual Cyberpunk Alto Contraste</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" id="depoimentos">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-pill">RESULTADOS COMPROVADOS</span>
+          <h2 class="section-title">O que Dizem os Usuários</h2>
+          <p class="section-desc">
+            Praticantes de musculação e atletas que elevaram seus níveis de força e hipertrofia com o FitMorph AI.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="test-quote">
+              "A calculadora de anilhas e a troca rápida de exercício quando a academia tá cheia mudaram meu treino. Eu perdia tempo esperando aparelho ou fazia qualquer coisa errada. Agora meu treino rende o dobro."
+            </p>
+            <div class="test-author">
+              <div class="author-avatar avatar-1">RL</div>
+              <div>
+                <h5 class="author-name">Rodrigo Lima</h5>
+                <span class="author-role">Praticante de Musculação • +7kg de Massa Magra</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="test-quote">
+              "A distribuição de macronutrientes bateu perfeitamente com a prescrição do meu nutricionista esportivo. Ter o cálculo de TDEE e a água sincronizados no mesmo app onde anoto as cargas é surreal."
+            </p>
+            <div class="test-author">
+              <div class="author-avatar avatar-2">BM</div>
+              <div>
+                <h5 class="author-name">Beatriz Mendes</h5>
+                <span class="author-role">Crossfit & Musculação • BF reduziu de 24% para 16%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="test-quote">
+              "A interface é linda demais, o tema escuro com verde neon lembra uma nave espacial. O timer de descanso com o alerta sonoro faz você não ficar enrolando no WhatsApp entre as séries."
+            </p>
+            <div class="test-author">
+              <div class="author-avatar avatar-3">GS</div>
+              <div>
+                <h5 class="author-name">Gabriel Santoro</h5>
+                <span class="author-role">Powerbuilding • PR Supino de 90kg para 130kg</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-container">
+        
+        <div class="section-header text-center">
+          <span class="section-pill">DÚVIDAS FREQUENTES</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-desc">
+            Tudo o que você precisa saber sobre o FitMorph AI e como ele ajuda na sua rotina.
+          </p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como a inteligência artificial monta a minha ficha de treino?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>O FitMorph AI utiliza a API Google Gemini Pro combinada com diretrizes da ciência esportiva. No seu cadastro (anamnese), você informa seus objetivos (hipertrofia, queima de gordura, força), dias da semana disponíveis, experiência e restrições articulares. A IA gera uma divisão balanceada com volume de séries adequado para evitar overtraining e maximizar a hipertrofia.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>O que é a calculadora de anilhas e como ela funciona?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>É uma ferramenta que calcula a combinação exata de anilhas (25kg, 20kg, 15kg, 10kg, 5kg, 2.5kg e 1.25kg) necessária em cada ponta da barra para atingir a carga total estipulada, descontando o peso da própria barra olímpica (20kg ou 15kg). Isso economiza tempo e evita erros de carregamento na academia.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Como funciona a substituição inteligente de exercícios?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Se você chegar em um aparelho e ele estiver ocupado ou você sentir desconforto em uma articulação, basta tocar no botão de substituição. O FitMorph analisa o catálogo anatômico e sugere exercícios com mesmo padrão de movimento (ex: Supino Inclinado com Halteres substituindo o Supino Inclinado Smith), mantendo a mesma intensidade.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>O FitMorph AI funciona no Android e iOS?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! O aplicativo foi desenvolvido nativamente com Flutter e Riverpod, oferecendo uma experiência ultrarrápida e idêntica tanto em smartphones Android quanto no iPhone (iOS), além de suporte para versão Web.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Meus dados ficam salvos se eu trocar de celular?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sim. Todos os seus treinos, histórico de cargas, recordes pessoais (PRs), medidas biometrias e fotos são sincronizados na nuvem em tempo real através da infraestrutura de banco de dados do Supabase.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA / DOWNLOAD BANNER -->
+    <section class="cta-banner-section" id="download">
+      <div class="container">
+        
+        <div class="cta-box">
+          <div class="cta-badge">EXPERIMENTE HOJE MESMO</div>
+          <h2 class="cta-title">Pronto para Conquistar o Melhor Físico da Sua Vida?</h2>
+          <p class="cta-subtitle">
+            Baixe o FitMorph AI e treine com a precisão dos maiores atletas de força e hipertrofia.
+          </p>
+
+          <div class="cta-download-buttons">
+            <a href="#" class="store-badge-btn" id="btn-google-play">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.597 1.597 0 0 1-.61-.954V2.768c0-.36.12-.684.348-.954l.26.26v-.26zm1.488-.934l11.135 6.43-2.44 2.44-8.695-8.87zm11.135 15.69l-11.135 6.43 8.695-8.87 2.44 2.44zm1.096-.633l3.663-2.115c1.077-.622 1.077-1.637 0-2.259l-3.663-2.115-2.684 2.684 2.684 2.685z"/></svg>
+              <div class="store-text">
+                <span class="store-small">DISPONÍVEL NO</span>
+                <span class="store-bold">Google Play</span>
+              </div>
+            </a>
+
+            <a href="#" class="store-badge-btn" id="btn-app-store">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 1.01-2.87-.9.04-2 .6-2.65 1.35-.58.65-.99 1.7-1.02 2.76 1.01.08 2.05-.49 2.66-1.24z"/></svg>
+              <div class="store-text">
+                <span class="store-small">BAIXAR NA</span>
+                <span class="store-bold">App Store</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="tech-stack-row">
+            <span class="tech-label">Tecnologias de Ponta:</span>
+            <span class="tech-pill">Flutter 3.x</span>
+            <span class="tech-pill">Google Gemini AI</span>
+            <span class="tech-pill">Riverpod</span>
+            <span class="tech-pill">Supabase DB</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand-col">
+        <div class="brand-logo">
+          <img src="assets/app_icon.jpg" alt="FitMorph AI Logo" class="brand-icon">
+          <span class="brand-name">FitMorph <span class="neon-badge">AI</span></span>
+        </div>
+        <p class="footer-text">
+          O aplicativo de musculação e hipertrofia definitivo. Engenharia de treinos guiada por inteligência artificial, cálculo metabólico e precisão de cargas.
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <h5 class="footer-col-title">Navegação</h5>
+        <ul class="footer-links">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#simulador">Simuladores Vivos</a></li>
+          <li><a href="#biometria">Biometria</a></li>
+          <li><a href="#comparativo">Diferenciais</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h5 class="footer-col-title">Ferramentas</h5>
+        <ul class="footer-links">
+          <li><a href="#simulador">Calculadora de Anilhas</a></li>
+          <li><a href="#simulador">Calculadora TDEE & BMR</a></li>
+          <li><a href="#simulador">Divisão de Macros</a></li>
+          <li><a href="#simulador">Gerador de Ficha IA</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-legal-col">
+        <h5 class="footer-col-title">Sobre o Projeto</h5>
+        <p class="footer-small">
+          Desenvolvido com arquitetura limpa em Flutter, Riverpod e Supabase. Prescrições geradas com auxílio de modelos de linguagem e ciência de treinamento esportivo.
+        </p>
+        <div class="footer-copy">
+          &copy; 2026 FitMorph AI. Todos os direitos reservados.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
